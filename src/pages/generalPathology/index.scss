@@ -1,0 +1,126 @@
+.general .general-banner {
+    margin-top: 98px;
+    width: 100%;
+    height: calc(100vw / 4);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.general .general-banner img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: sizechange 1.5s;
+}
+
+@keyframes sizechange {
+    0% {
+        left: -10%;
+        top: -10%;
+        width: 120%;
+        height: 120%;
+    }
+
+    100% {
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.general .general-banner .banner-desc {
+    top: 50%;
+    left: calc(50% - 600px);
+    transform: translateY(-50%);
+    width: 1200px;
+    margin: 0 auto;
+    position: absolute;
+    color: #333333;
+}
+
+.general .general-banner .banner-desc .desc-title {
+    font-size: 46px;
+    height: 43px;
+    font-size: 46px;
+    font-family: Source Han Sans CN;
+    font-weight: 500;
+
+}
+
+.general .general-banner .banner-desc .desc-content {
+    width: 640px;
+    margin-top: 44px;
+    font-size: 20px;
+    line-height: 35px;
+    color: #333333;
+    opacity: 0.8;
+}
+
+
+
+
+
+.general-container {
+    width: 1200px;
+    margin: 110px auto;
+
+    .cell {
+        img {
+            width: 1200px;
+            margin-bottom: 40px;
+        }
+    }
+
+    .histology {
+        display: flex;
+        margin-top: 95px;
+        img{
+            width: 591px;
+            height: 381px;
+        }
+
+        .histology-desc {
+            position: relative;
+            margin-left: 67px;
+
+            img {
+                width: 122px;
+                height: 113px;
+                margin-top: 35px;
+            }
+
+            .title {
+                position: absolute;
+                top: 114px;
+            }
+        }
+    }
+
+    .immune {
+        flex-direction: row-reverse;
+
+        .histology-desc {
+            width: 580px;
+            margin-left: 0px;
+            padding-right: 20px;
+        }
+    }
+}
+
+.title {
+    font-size: 28px;
+    color: #333333;
+    line-height: 38px;
+}
+
+.desc {
+    margin-top: 14px;
+    font-size: 16px;
+    color: #444444;
+    line-height: 36px;
+}

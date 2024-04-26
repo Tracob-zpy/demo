@@ -1,0 +1,145 @@
+.content-container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.newsDetail-container {
+    padding-top: 98px;
+}
+
+
+
+.hot {
+    width: 1000px;
+    margin: 0 auto 80px;
+}
+
+.hot .hot-title {
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 400;
+    color: #111111;
+    line-height: 56px;
+    border-bottom: 1px solid #999999;
+}
+
+.news-item {
+    margin-bottom: 40px;
+}
+
+.news-item:hover {
+    background: #F8F8F8;
+}
+
+
+
+.news-item .item-container {
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.news-item .item-container img {
+    margin: 0;
+    width: 180px;
+    height: 180px;
+}
+
+.news-item .item-container .item-detail {
+    margin: 5px 0 0 49px;
+    width: 971px;
+}
+
+.news-item .item-container .item-detail .item-title {
+    font-size: 26px;
+    color: #111111;
+}
+
+.news-item .item-container .item-detail .item-title:hover {
+    color: #0098A6;
+}
+
+.news-item .item-container .item-detail .item-desc {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #999999;
+    line-height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box; //作为弹性伸缩盒子模型显示。
+    -webkit-box-orient: vertical; //设置伸缩盒子的子元素排列方式--从上到下垂直排列
+    -webkit-line-clamp: 2; //显示的行
+}
+
+.news-item .item-container .item-detail .item-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 28px;
+}
+
+.news-item .item-container .item-detail .item-info .item-date .day {
+    font-size: 32px;
+    font-weight: 500;
+    color: #333333;
+    line-height: 44px;
+}
+
+.news-item .item-container .item-detail .item-info .item-date .year {
+    margin-left: 21px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333333;
+}
+
+.news-item .item-container .item-detail .item-info .learn-more {
+    padding-right: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #333333;
+    line-height: 44px;
+
+    &:hover {
+        color: #0098A6
+    }
+}
+
+.newsDetail-container img {
+    margin: 20px 0;
+    width: 1000px;
+}
+
+.content-container {
+
+    p,
+    span {
+        font-size: 18px;
+        color: #666 !important;
+        line-height: 30px;
+    }
+}
+
+.newsDetail-container h2 {
+    text-align: center;
+    margin: 61px 0 20px;
+    font-size: 30px;
+    color: #111111;
+}
+
+.article-info {
+    margin-bottom: 39px;
+    width: 1000px;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+
+    span {
+        height: 15px;
+        font-size: 14px;
+        font-family: Source Han Sans CN;
+        font-weight: 400;
+        color: #999999;
+        line-height: 38px;
+        padding: 0 68px;
+    }
+}

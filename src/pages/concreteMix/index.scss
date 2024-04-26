@@ -1,0 +1,234 @@
+.content-body{
+  width: 100%;
+  padding-top: 98px;
+}
+
+.content-body .bigimg-box{
+  width: 100%;
+  height: calc(100vw / 4);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-body .bigimg-box img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: sizechange 1.5s;
+}
+
+@keyframes sizechange {
+  0% { left: -10%; top: -10%; width: 120%; height: 120%;  }
+  100% { left: 0; top: 0; width: 100%; height: 100%; }
+}
+
+.content-body .bigimg-box .text-box{
+  display: inline-block;
+  z-index: 10;
+  text-align: center;
+  color: #fff;
+  font-family: Source Han Sans CN;
+  font-size: 20px;
+}
+
+.content-body .bigimg-box .text-box .text-title{
+  font-size: 46px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.content-body .bigimg-box .text-box .text-desc{
+  opacity: .8;
+}
+
+.content-body{
+  .swiper-box{
+    width: 1200px;
+    background: #fff;
+    margin: 0 auto;
+    padding: 122px 0 0;
+    color: #111;
+    font-family: Source Han Sans CN;
+    text-align: center;
+    .swipe-title{
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+    .swipe-desc{
+      font-size: 20px;
+      font-family: Adobe Heiti Std;
+      font-weight: normal;
+      color: #666666;
+      line-height: 40px;
+      margin-bottom: 70px;
+    }
+    .countylevel-img{
+      width: 1200px;
+      margin: 0 auto 136px;
+      height: 556px;
+      background-color: #F8F8FA;
+      padding: 10px 0;
+      svg{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .cooperationcase{
+    width: 100%;
+    height: 860px;
+    // height: calc(100vw / 2.233);
+    background: url(https://wsi.oss-cn-shanghai.aliyuncs.com/images/appendix/1612330701029VggoAM/county-case.jpg) no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    .cooperationcase-content{
+      width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+      .cooperation-title{
+        font-size: 40px;
+        font-family: Adobe Heiti Std;
+        font-weight: normal;
+        color: #333;
+        margin-bottom: 40px;
+      }
+      .cooperation-desc{
+        padding: 0 100px;
+        font-size: 20px;
+        font-family: Source Han Sans CN;
+        font-weight: 400;
+        color: #666666;
+        line-height: 36px;
+        margin-bottom: 60px;
+      }
+      .swiper-parent{
+        width: 1200px;
+        margin: 0 auto;
+        position: relative;
+        .nextbtn{
+          position: absolute;
+          top: 182px;
+          width: 50px;
+          height: 50px;
+          background-color: #c1c1c1;
+          border-radius: 50%;
+          color: #fff;
+          line-height: 50px;
+          text-align: center;
+          cursor: pointer;
+          &.button-prev{
+            left: -75px;
+            &:hover{
+              &::after{
+                opacity: 1;
+              }
+            }
+            &::after{
+              content: 'prev';
+              font-family: swiper-icons;
+              font-size: 16px;
+              font-weight: 600;
+              opacity: .7;
+              text-transform: none!important;
+              letter-spacing: 0;
+              text-transform: none;
+              font-variant: initial;
+            }
+          }
+          &.button-next{
+            right: -75px;
+            &:hover{
+              &::after{
+                opacity: 1;
+              }
+            }
+            &::after{
+              content: 'next';
+              font-family: swiper-icons;
+              font-size: 16px;
+              opacity: .7;
+              font-weight: 600;
+              text-transform: none!important;
+              letter-spacing: 0;
+              text-transform: none;
+              font-variant: initial;
+            }
+          }
+        }
+        .swiper-container{
+          width: 100%;
+          height: 488px;
+          border-radius: 10px;
+          .swiper-wrapper{
+            border-radius: 10px;
+          }
+          .swiper-pagination{
+            .swiper-pagination-bullet{
+              width: 27px;
+              height: 3px;
+              background: #000000;
+              opacity: 0.2;
+              border-radius: 2px;
+              &.swiper-pagination-bullet-active{
+                background: #0098A6;
+                opacity: 1;
+              }
+            }
+          }
+          .swiper-slide{
+            width: 100%;
+            height: 423px;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 40px 0px rgba(112, 144, 176, 0.1);
+            border-radius: 10px;
+            padding: 70px 59px 0 55px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            .number{
+              font-size: 140px;
+              font-family: DIN Black;
+              font-weight: 400;
+              color: #0098A6;
+              opacity: 0.1;
+              position: absolute;
+              line-height: 140px;
+              top: 69px;
+              right: 71px;
+            }
+            .swiper-img{
+              width: 518px;
+              height: 294px;
+              img{
+                width: 100%;
+                height: 100%;
+              }
+            }
+            .swiper-desc{
+              width: 510px;
+              padding-top: 98px;
+              text-align: left;
+              .swiper-desc-title{
+                font-size: 30px;
+                font-weight: 500;
+                color: #0098A6;
+                margin-bottom: 22px;
+              }
+              .swiper-desc-cont{
+                font-size: 16px;
+                font-weight: 400;
+                color: #666666;
+                line-height: 36px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

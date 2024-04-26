@@ -1,0 +1,133 @@
+.joinus {
+    overflow: hidden;
+    background: #F7F7F7;
+}
+
+.joinus .joinus-banner {
+    margin-top: 98px;
+    width: 100%;
+    height: calc(100vw / 4);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.joinus .joinus-banner img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: sizechange 1.5s;
+}
+
+@keyframes sizechange {
+    0% {
+        left: -10%;
+        top: -10%;
+        width: 120%;
+        height: 120%;
+    }
+
+    100% {
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.joinus .joinus-banner .banner-desc {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    color: #FFFFFF;
+}
+
+.joinus .joinus-banner .banner-desc .desc-title {
+    font-size: 60px;
+}
+
+.joinus .joinus-banner .banner-desc .desc-content {
+    margin-top: 44px;
+    font-size: 60px;
+    opacity: 0.8;
+}
+
+.joinus-container {
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 26px;
+}
+
+.joinus-container .join-title {
+    margin-top: 86px;
+    padding-left: 20px;
+    box-sizing: content-box;
+    width: 300px;
+    height: 30px;
+    font-size: 24px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #333333;
+    line-height: 30px;
+    border-left: 4px solid #0098A6;
+}
+
+.joinus-container .position-item {
+    background-color: #fff;
+    margin-top: 26px;
+    padding: 30px;
+}
+
+.joinus-container .position-item .position-title {
+    height: 24px;
+    font-size: 24px;
+    font-family: Source Han Sans CN;
+    font-weight: 500;
+    color: #333333;
+}
+
+.joinus-container .position-item .position-info {
+    margin-top: 18px;
+    height: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #999999;
+}
+
+.joinus-container .position-item .position-info span {
+    margin-right: 46px;
+}
+
+.joinus-container .position-item .position-detail .position-role {
+    margin-top: 39px;
+    font-size: 18px;
+    line-height: 38px;
+}
+
+.hr-email {
+    color: #0098A6;
+}
+
+.joinus-container .position-item .position-detail .position-role .role-title {
+    color: #333;
+    font-weight: 500;
+}
+
+.joinus-container .position-item .position-detail .position-role .role-items {
+    color: #666;
+}
+
+.join-bottom {
+    margin-top: 70px;
+    width: 100%;
+}
+
+.join-bottom img {
+    width: 100%;
+}

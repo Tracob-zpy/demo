@@ -1,0 +1,233 @@
+.companion {
+  position: relative;
+}
+.content-body{
+  width: 100%;
+  padding-top: 98px;
+}
+
+.content-body .bigimg-box{
+  width: 100%;
+  height: calc(100vw / 4);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-body .bigimg-box img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: sizechange 1.5s;
+}
+
+@keyframes sizechange {
+  0% { left: -10%; top: -10%; width: 120%; height: 120%;  }
+  100% { left: 0; top: 0; width: 100%; height: 100%; }
+}
+
+.content-body .bigimg-box .text-box{
+  display: inline-block;
+  z-index: 10;
+  text-align: center;
+  color: #fff;
+  font-family: Source Han Sans CN;
+  font-size: 20px;
+}
+
+.content-body .bigimg-box .text-box .text-title{
+  font-size: 46px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.content-body .bigimg-box .text-box .text-desc{
+  opacity: .8;
+}
+
+@keyframes logomove {
+  0% { opacity: 0; bottom: -50px; }
+  100% { opacity: 1; bottom: 0px; }
+}
+
+.content-body{
+  .swiper-box{
+    width: 1200px;
+    background: #fff;
+    margin: -70px auto 0;
+    padding: 94px 0 140px;
+    color: #111;
+    position: relative;
+    font-family: Source Han Sans CN;
+    text-align: center;
+    .swipe-title{
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+    .border-list{
+      display: flex;
+      margin: 0 auto 45px;
+      width: 38px;
+      height: 33px;
+      justify-content: space-between;
+      align-items: center;
+      .border1{
+        width: 2px;
+        height: 33px;
+        background: #0098A6;
+      }
+      .border2{
+        width: 2px;
+        height: 19px;
+        background: #0098A6;
+      }
+    }
+    .swipe-desc{
+      font-size: 20px;
+      font-family: Source Han Sans CN;
+      font-weight: 400;
+      color: #666666;
+      line-height: 40px;
+      margin-bottom: 70px;
+    }
+    .video-container{
+      width: 800px;
+      height: 450px;
+      margin: 0 auto;
+      position: relative;
+      .bg{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: url(../../assets/images/videobg.png) no-repeat left top;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        .playicon{
+          cursor: pointer;
+          width: 60px;
+          height: 60px;
+          background: url(../../assets/images/playicon.svg) no-repeat;
+          background-size: cover;
+          margin-bottom: 28px;
+        }
+        .playdesc{
+          font-size: 20px;
+          font-family: Source Han Sans CN;
+          font-weight: 400;
+          color: #FFFFFF;
+        }
+      }
+      .video{
+        width: 100%;
+        height: 100%;
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        video{
+          display: none;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+  .servicecont{
+    width: 100%;
+    padding: 104px 0 129px;
+    background: #F7F9FA;
+    .service-title{
+      text-align: center;
+      font-size: 46px;
+      font-family: Source Han Sans CN;
+      font-weight: 500;
+      color: #333333;
+      margin-bottom: 69px;
+    }
+    .service-item{
+      width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      .desc-box{
+        background: #fff;
+        width: 50%;
+        height: 488px;
+        background: url(../../assets/images/firstmarks.png) no-repeat 41px 45px;
+        padding: 71px 0 0 135px;
+        .desc-box-title{
+          font-size: 28px;
+          color: #333333;
+          font-weight: 500;
+          margin-bottom: 70px;
+        }
+        .desc-box-cont{
+          font-size: 18px;
+          font-family: Source Han Sans CN;
+          font-weight: 400;
+          line-height: 36px;
+          color: #666;
+        }
+      }
+      .service-img{
+        width: 600px;
+        height: 488px;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+  .cases{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 166px;
+    .case-item{
+      display: flex;
+      height: 380px;
+      margin-bottom: 160px;
+      &.reserve{
+        flex-direction: row-reverse;
+        .case-desc{
+          padding-left: 0;
+          padding-right: 68px;
+          background-position: left top;
+        }
+      }
+      .case-img{
+        width: 675px;
+        height: 100%;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .case-desc{
+        flex: 1;
+        background: url(../../assets/images/firstmarks.png) no-repeat 41px 43px;
+        padding: 102px 14px 0 64px;
+        .case-title{
+          font-size: 28px;
+          color: #333333;
+          font-weight: 500;
+          margin-bottom: 70px;
+        }
+        .case-cont{
+          font-size: 18px;
+          font-family: Source Han Sans CN;
+          font-weight: 400;
+          line-height: 36px;
+          color: #666;
+        }
+      }
+    }
+  }
+}

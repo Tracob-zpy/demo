@@ -1,0 +1,167 @@
+.content-body{
+  width: 100%;
+  padding-top: 98px;
+}
+
+.content-body .bigimg-box{
+  width: 100%;
+  height: calc(100vw / 4);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-body .bigimg-box img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: sizechange 1.5s;
+}
+
+@keyframes sizechange {
+  0% { left: -10%; top: -10%; width: 120%; height: 120%;  }
+  100% { left: 0; top: 0; width: 100%; height: 100%; }
+}
+
+.content-body .bigimg-box .text-box{
+  display: inline-block;
+  z-index: 10;
+  text-align: center;
+  color: #fff;
+  font-family: Source Han Sans CN;
+  font-size: 20px;
+}
+
+.content-body .bigimg-box .text-box .text-title{
+  font-size: 46px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.content-body .bigimg-box .text-box .text-desc{
+  opacity: .8;
+}
+
+.content-body{
+  .swiper-box{
+    width: 1200px;
+    background: #fff;
+    margin: 0 auto;
+    padding: 122px 0 0;
+    color: #111;
+    font-family: Source Han Sans CN;
+    text-align: center;
+    .swipe-title{
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+    .swipe-desc{
+      font-size: 20px;
+      font-family: Adobe Heiti Std;
+      font-weight: normal;
+      color: #666666;
+      line-height: 40px;
+      margin-bottom: 70px;
+    }
+    .countylevel-img{
+      width: 1200px;
+      margin: 0 auto 136px;
+      height: 556px;
+      background-color: #F8F8FA;
+      padding: 10px 0;
+      svg{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .cooperationcase{
+    width: 100%;
+    height: calc(100vw / 3.83);
+    background: url(https://wsi.oss-cn-shanghai.aliyuncs.com/images/appendix/1612330701029VggoAM/county-case.jpg) no-repeat;
+    background-size: cover;
+    margin-bottom: 138px;
+    .cooperationcase-content{
+      width: 1200px;
+      margin: 0 auto;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .cooperation-desc{
+        font-size: 20px;
+        font-weight: 400;
+        color: #333;
+        width: 500px;
+      }
+      .cooperation-img{
+        width: 610px;
+        height: 394px;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+  .cases{
+    width: 1200px;
+    margin: 0 auto;
+    .case-top{
+      width: 100%;
+      height: 540px;
+      margin-top: -404px;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .case-bot{
+      width: 100%;
+      padding: 0 0 119px;
+      .case-bot-item{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 119px;
+        .case-bot-item-img{
+          width: 590px;
+          height: 380px;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .case-bot-item-desc{
+          width: 540px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          .case-bot-item-title{
+            font-size: 30px;
+            font-weight: 500;
+            color: #0098A6;
+            margin-bottom: 28px;
+          }
+          .case-bot-item-cont{
+            font-size: 20px;
+            font-weight: 400;
+            color: #333333;
+            line-height: 36px;
+          }
+        }
+        &.special{
+          .case-bot-item-img{
+            width: 680px;
+            height: 462px;
+          }
+          .case-bot-item-desc{
+            width: 420px;
+          }
+        }
+      }
+    }
+  }
+}

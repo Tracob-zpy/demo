@@ -1,0 +1,378 @@
+.content-body{
+  width: 100%;
+  padding-top: 98px;
+}
+
+.content-body .bigimg-box{
+  width: 100%;
+  height: calc(100vw / 4);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-body .bigimg-box img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: sizechange 1.5s;
+}
+
+@keyframes sizechange {
+  0% { left: -10%; top: -10%; width: 120%; height: 120%;  }
+  100% { left: 0; top: 0; width: 100%; height: 100%; }
+}
+
+.content-body .bigimg-box .text-box{
+  width: 1200px;
+  z-index: 10;
+  text-align: left;
+  color: #fff;
+  font-family: Source Han Sans CN;
+  font-size: 20px;
+}
+
+.content-body .bigimg-box .text-box .text-title{
+  font-size: 46px;
+  font-weight: 400;
+  margin-bottom: 28px;
+}
+
+.content-body .bigimg-box .text-box .text-desc{
+  opacity: .8;
+  line-height: 30px;
+}
+
+.content-body{
+  .swiper-box{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 80px 0 130px;
+    .tab-container{
+      width: 100%;
+      display: flex;
+      .tabs{
+        flex: 1;
+        display: flex;
+        height: 360px;
+        .border-container{
+          width: 4px;
+          height: 100%;
+          border-radius: 4px;
+          background: rgba(0, 0, 0, .1);
+          position: relative;
+          .border{
+            width: 100%;
+            border-radius: 4px;
+            height: 120px;
+            background: #0098A6;
+            opacity: 1;
+            position: absolute;
+            left: 0;
+            top: 0;
+          }
+        }
+        .tabs-list{
+          height: 360px;
+          font-size: 24px;
+          font-weight: 400;
+          .tabs-item{
+            color: #999999;
+            padding-left: 30px;
+            line-height: 120px;
+            cursor: pointer;
+            &.selected{
+              color: #0098A6;
+            }
+          }
+        }
+      }
+      .tab-content{
+        width: 940px;
+        .tab-content-item{
+          display: none;
+          &.selected{
+            display: block;
+          }
+          .data-platform{
+            width: 100%;
+            height: 296px;
+            background: url(https://wsi.oss-cn-shanghai.aliyuncs.com/images/appendix/1612335767281QPoSUV/数字病理--病理大数据.jpg) no-repeat left top;
+            padding: 84px 113px 0 90px;
+            background-size: cover;
+            margin-bottom: 104px;
+            .data-platform-title{
+              font-size: 28px;
+              font-weight: 500;
+              color: #333333;
+              margin-bottom: 36px;
+            }
+            .data-platform-desc{
+              font-size: 16px;
+              font-weight: 400;
+              color: #555555;
+              line-height: 30px;
+            }
+          }
+          .pathhub-container{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 120px;
+            .pathhub-left{
+              width: 473px;
+              .left-img{
+                width: 100%;
+                height: 348px;
+                margin-bottom: 210px;
+                img{
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+              .left-desc{
+                font-size: 20px;
+                font-weight: 400;
+                color: #333333;
+                line-height: 30px;
+              }
+            }
+            .pathhub-right{
+              width: 384px;
+              .right-desc{
+                font-size: 20px;
+                font-weight: 400;
+                color: #444444;
+                line-height: 30px;
+                .right-title{
+                  font-size: 30px;
+                  font-weight: 400;
+                  color: #333333;
+                  margin-bottom: 40px;
+                  line-height: 38px;
+                }
+              }
+              .right-img{
+                width: 100%;
+                height: 454px;
+                margin-top: 160px;
+                img{
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+            }
+          }
+          .data-bot{
+            width: 100%;
+            .bot-title{
+              font-size: 20px;
+              font-family: Source Han Sans CN;
+              font-weight: 400;
+              color: #444444;
+              line-height: 30px;
+              margin-bottom: 30px;
+            }
+            .bot-img{
+              width: 100%;
+              height: 320px;
+              img{
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+          // ai
+          .ai-container{
+            width: 100%;
+            .swiper-container{
+              width: 940px;
+              height: 420px;
+              .swiper-button-prev{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background: rgba(193, 193, 193, .7);
+                color: #fff;
+                left: 28px;
+                &:hover{
+                  &::after{
+                    opacity: 1;
+                  }
+                }
+                &::after{
+                  font-size: 16px;
+                  font-weight: 600;
+                  opacity: .7;
+                }
+                &.swiper-button-disabled{
+                  opacity: .2;
+                }
+              }
+              .swiper-button-next{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background: rgba(193, 193, 193, .7);
+                color: #fff;
+                right: 28px;
+                &:hover{
+                  &::after{
+                    opacity: 1;
+                  }
+                }
+                &::after{
+                  font-size: 16px;
+                  font-weight: 600;
+                  opacity: .7;
+                }
+                &.swiper-button-disabled{
+                  opacity: .2;
+                }
+              }
+              .swiper-slide{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-content: space-between;
+                img{
+                  width: 32%;
+                  height: 200px;
+                }
+              }
+            }
+            .swiper-title{
+              font-size: 28px;
+              font-weight: 500;
+              color: #333333;
+              margin-bottom: 15px;
+              margin-top: 30px;
+            }
+            .swiper-desc{
+              font-size: 16px;
+              font-weight: 400;
+              color: #555555;
+              margin-bottom: 80px;
+            }
+            .ai-contentmid{
+              .aimid-item{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                height: 298px;
+                margin-bottom: 60px;
+                &.reserve{
+                  flex-direction: row-reverse; 
+                }
+                .mid-img{
+                  width: 459px;
+                  height: 100%;
+                  img{
+                    width: 100%;
+                    height: 100%;
+                  }
+                }
+                .mid-desc{
+                  width: 459px;
+                  height: 100%;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  .mid-desc-title{
+                    font-size: 28px;
+                    font-weight: 500;
+                    color: #333333;
+                    margin-bottom: 19px;
+                  }
+                  .mid-desc-cont{
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #555555;
+                  }
+                }
+              }
+            }
+            .ai-bot{
+              width: 100%;
+              .ai-bot-img{
+                width: 100%;
+                height: 298px;
+                img{
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+              .ai-bot-desc{
+                margin-bottom: 0;
+              }
+            }
+          }
+          // micro
+          .micro-swiper{
+            width: 100%;
+            height: 400px;
+            background: url(https://wsi.oss-cn-shanghai.aliyuncs.com/images/appendix/1612330206142oZLMQU/数字病理-智能显微镜.jpg) no-repeat left top;
+            background-size: cover;
+            padding: 89px 320px 0 68px;
+            .micro-swiper-title{
+              font-size: 28px;
+              font-weight: 500;
+              color: #333333;
+              margin-bottom: 47px;
+            }
+            .micro-swiper-desc{
+              font-size: 16px;
+              font-weight: 400;
+              color: #555555;
+              line-height: 26px;
+            }
+          }
+          .micro-bot{
+            .micro-bot-title{
+              font-size: 28px;
+              font-family: Source Han Sans CN;
+              font-weight: 500;
+              color: #333333;
+              margin:100px 0 60px;
+            }
+            .micro-bot-content{
+              display: flex;
+              width: 100%;
+              height: 298px;
+              margin-bottom: 60px;
+              &:last-child{
+                margin-bottom: 0;
+              }
+              .micro-bot-img{
+                width: 459px;
+                height: 100%;
+                img{
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+              .micro-bot-desc{
+                flex: 1;
+                display: flex;
+                background-color: #F7F9FA;
+                flex-direction: column;
+                justify-content: center;
+                .micro-bot-desc-cont{
+                  font-size: 16px;
+                  font-family: Source Han Sans CN;
+                  font-weight: 400;
+                  color: #555555;
+                  line-height: 36px;
+                  padding-left: 50px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

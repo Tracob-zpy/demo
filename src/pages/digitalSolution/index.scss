@@ -1,0 +1,243 @@
+.solution {
+    overflow: hidden;
+}
+
+.solution .solution-banner {
+    margin-top: 98px;
+    width: 100%;
+    height: calc(100vw / 4);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.solution .solution-banner img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: sizechange 1.5s;
+}
+
+@keyframes sizechange {
+    0% {
+        left: -10%;
+        top: -10%;
+        width: 120%;
+        height: 120%;
+    }
+
+    100% {
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.solution .solution-banner .banner-desc {
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    color: #FFFFFF;
+}
+
+.solution .solution-banner .banner-desc .desc-title {
+    font-size: 46px;
+}
+
+.solution-plan {
+    width: 1200px;
+    height: 965px;
+    margin: 0 auto;
+    text-align: center;
+
+    .plan-tilte {
+        padding-top: 139px;
+        font-size: 40px;
+        color: #333333;
+    }
+
+    .plan-desc {
+        padding-top: 28px;
+        font-size: 20px;
+        color: #666666;
+    }
+
+    .plan-banner-box {
+        margin-top: 83px;
+        width: 1200px;
+        height: 556px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #F8F8FA;
+
+        .plan-banner {
+            width: 1058px;
+            height: 432px;
+
+        }
+    }
+}
+
+
+// 设备
+.hardware {
+    position: relative;
+    width: 100%;
+    height: 33vw;
+    background: no-repeat url('https://wsi.oss-cn-shanghai.aliyuncs.com/images/appendix/1612323350261BsETwz/swiper-bgc.jpg');
+    background-size: 100% 100%;
+
+    .hardware-title {
+        padding-top: calc(12vw - 140px);
+        padding-bottom: calc(6vw - 70px);
+        text-align: center;
+        font-size: 40px;
+        color: #FFFFFF;
+    }
+}
+
+.swiper-container {
+    width: 1200px;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    // background: pink;
+    height: 340px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    transition: 300ms;
+    transform: scale(0.7);
+
+    .img-cover {
+        // display: none;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -90px;
+        right: -98px;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+   
+
+    .img-box {
+        width: 577px;
+        height: 340px;
+
+        img {
+            width: 577px;
+            height: 340px;
+        }
+    }
+}
+ .swiper-slide-active .img-cover {
+            display: none;
+        }
+    
+.swiper-slide-active,
+.swiper-slide-duplicate-active {
+    transform: scale(1);
+    z-index: 999;
+}
+
+.swiper-button-next:focus,
+.swiper-button-prev:focus {
+    outline: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    top: 18vw;
+    width: 66px;
+    height: 66px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 33px;
+}
+
+.swiper-button-next {
+    left: 50%;
+    transform: translateX(630px)
+}
+
+.swiper-button-prev {
+    left: 50%;
+    transform: translateX(-700px)
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 23px;
+    color: #fff;
+    font-weight: 600;
+}
+
+// 智能软件
+.software {
+    margin-bottom: 164px;
+
+    .software-title {
+        margin: 124px 0 107px;
+        text-align: center;
+        font-size: 40px;
+        color: #111111;
+    }
+
+    .software-item {
+        display: flex;
+        width: 1200px;
+        margin: 0 auto;
+        align-content: center;
+        img{
+            width: 600px;
+            height: 400px;
+        }
+        .item-desc {
+            padding: 0px 0 0 76px;
+
+            .title {
+                margin-top: 149px;
+                font-size: 28px;
+                color: #333333;
+            }
+
+            .desc {
+                margin-top: 29px;
+                font-size: 20px;
+                color: #555555;
+                line-height: 36px;
+
+            }
+        }
+
+
+    }
+
+    .reverse-item {
+        margin: 121px auto;
+        flex-direction: row-reverse;
+
+        .item-desc {
+            padding-left: 0px;
+            padding-right: 60px;
+        }
+    }
+}
