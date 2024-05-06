@@ -1,7 +1,7 @@
 .content-body{
     width: 100%;
     padding-top: 98px;
-    background: #D6D6D6;
+    background: #F2F2F2;
   }
   @keyframes sizechange {
     0% { left: -10%; top: -10%; width: 120%; height: 120%;  }
@@ -10,7 +10,7 @@
 
 .main{
     width: 80%;
-    height: 2800px;
+    height: 3000px;
     margin: 0 auto;
 }
   .cooperationcase{
@@ -118,50 +118,13 @@ margin-bottom: 20px;
 }
 }
 //产品参数
-table{
+.product_param{
+    border:1px solid #666;
     width: 100%;
-    border-collapse: collapse;
-    border-spacing: 0;
-    empty-cells: show;
-    background-color: #eee;
-    margin-bottom: 20px;
-    empty-cells: show;
-    tbody {
-        display: table-row-group;
-        vertical-align: middle;
-        unicode-bidi: isolate;
-        border-color: inherit;
-    }
-    tr{
-        display: table-row;
-        vertical-align: inherit;
-        unicode-bidi: isolate;
-        border-color: inherit;
-    }
-    td{
-        display: table-cell;
-        vertical-align: inherit;
-        unicode-bidi: isolate;
-        border-collapse: collapse;
-        border:1px solid #909090;
-    }
-    .td1{
-       background:#686868;
-       color:#fff;
-       height: 40px;
-       border:1px solid #fff;
-       border-left: 0;
-       border-right: 0;
-       font-size: 16px;
-    }
-    .tr1{
-        background:#EEEEEE;
-        height: 40px;
-        border: 1px solid #909090;
-    }
-    td{
-        border-collapse:collapse;
-    }
+    height: 800px;
+    background: url('../../../public/images/productions/35_table.jpg') no-repeat center;
+    background-size: 100% 100%;
+    margin-bottom: 10px;
 }
 .annotation{
     font-size: 16px;
@@ -177,11 +140,21 @@ table{
         display: flex;
         flex-direction: column;
         align-items: center;
-        img{
-            margin-bottom: 15px;
-        }
         span{
-        font-size: 18px;
+            font-size: 18px;
         }
+    }
+    .case_list_item_img{
+        width: 600px;
+        height: 400px;
+        margin-bottom: 15px;
+    }
+    .case_list_item_one{
+        background: url('../../../public/images/productions/dc_35_1.jpg') no-repeat center;
+        background-size: 100% 100%;
+    }
+    .case_list_item_two{
+        background: url('../../../public/images/productions/dc_35_2.jpg') no-repeat center;
+        background-size: 100% 100%;
     }
 }
